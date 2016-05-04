@@ -124,7 +124,7 @@
 /* Preserve environment on sd card */
 #define CONFIG_COMMAND_HISTORY
 
-#define CONFIG_ENV_SIZE			0x1000
+#define CONFIG_ENV_SIZE			SZ_128K
 #define CONFIG_ENV_IS_IN_FAT
 #define FAT_ENV_INTERFACE               "mmc"
 #define FAT_ENV_DEVICE_AND_PART         "1:1"
@@ -142,5 +142,7 @@
 #define CONFIG_SYS_MAXARGS		64	/* max command args */
 
 #define CONFIG_SYS_NO_FLASH
+
+#define CONFIG_SYS_REDUNDAND_ENVIRONMENT
 
 #endif /* __HIKEY_H */
